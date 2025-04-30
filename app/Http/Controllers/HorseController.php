@@ -12,7 +12,7 @@ class HorseController extends Controller
     public function index()
     {
         $horses = Horse::with('stable')->get();
-        return view('horses.index', compact('horses'));
+        return view('Layouts_dashboard.horses.index', compact('horses'));
     }
 
     // عرض صفحة إنشاء خيل جديد
@@ -33,7 +33,7 @@ class HorseController extends Controller
 
         Horse::create($validated);
 
-        return redirect()->route('horses.index')->with('success', 'Horse created successfully!');
+        return redirect()->route('Layouts_dashboard.horses.index')->with('success', 'Horse created successfully!');
     }
 
     // عرض صفحة تعديل خيل
@@ -54,13 +54,13 @@ class HorseController extends Controller
 
         $horse->update($validated);
 
-        return redirect()->route('horses.index')->with('success', 'Horse updated successfully!');
+        return redirect()->route('Layouts_dashboard.horses.index')->with('success', 'Horse updated successfully!');
     }
 
     // حذف الخيل
     public function destroy(Horse $horse)
     {
         $horse->delete();
-        return redirect()->route('horses.index')->with('success', 'Horse deleted successfully!');
+        return redirect()->route('Layouts_dashboard.horses.index')->with('success', 'Horse deleted successfully!');
     }
 }

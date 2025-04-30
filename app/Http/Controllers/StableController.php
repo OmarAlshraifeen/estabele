@@ -12,7 +12,7 @@ class StableController extends Controller
     public function index()
     {
         $stables = Stable::with('admin')->get();
-        return view('stables.index', compact('stables'));
+        return view('Layouts_dashboard.stables.index', compact('stables'));
     }
 
     // عرض نموذج إنشاء اسطبل
@@ -33,7 +33,7 @@ class StableController extends Controller
 
         Stable::create($validated);
 
-        return redirect()->route('stables.index')->with('success', 'Stable created successfully!');
+        return redirect()->route('Layouts_dashboard.stables.index')->with('success', 'Stable created successfully!');
     }
 
     // عرض نموذج التعديل
@@ -54,13 +54,13 @@ class StableController extends Controller
 
         $stable->update($validated);
 
-        return redirect()->route('stables.index')->with('success', 'Stable updated successfully!');
+        return redirect()->route('Layouts_dashboard.stables.index')->with('success', 'Stable updated successfully!');
     }
 
     // حذف الاسطبل
     public function destroy(Stable $stable)
     {
         $stable->delete();
-        return redirect()->route('stables.index')->with('success', 'Stable deleted successfully!');
+        return redirect()->route('Layouts_dashboard.stables.index')->with('success', 'Stable deleted successfully!');
     }
 }

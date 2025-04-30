@@ -14,7 +14,7 @@ class BookingController extends Controller
     public function index()
     {
         $bookings = Booking::with(['user', 'horse', 'path'])->get();
-        return view('bookings.index', compact('bookings'));
+        return view('Layouts_dashboard.bookings.index', compact('bookings'));
     }
 
     // عرض صفحة إنشاء حجز
@@ -39,7 +39,7 @@ class BookingController extends Controller
 
         Booking::create($validated);
 
-        return redirect()->route('bookings.index')->with('success', 'Booking created successfully!');
+        return redirect()->route('Layouts_dashboard.bookings.index')->with('success', 'Booking created successfully!');
     }
 
     // عرض صفحة التعديل
@@ -64,13 +64,13 @@ class BookingController extends Controller
 
         $booking->update($validated);
 
-        return redirect()->route('bookings.index')->with('success', 'Booking updated successfully!');
+        return redirect()->route('Layouts_dashboard.bookings.index')->with('success', 'Booking updated successfully!');
     }
 
     // حذف الحجز
     public function destroy(Booking $booking)
     {
         $booking->delete();
-        return redirect()->route('bookings.index')->with('success', 'Booking deleted successfully!');
+        return redirect()->route('Layouts_dashboard.bookings.index')->with('success', 'Booking deleted successfully!');
     }
 }

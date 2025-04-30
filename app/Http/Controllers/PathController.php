@@ -12,7 +12,7 @@ class PathController extends Controller
     public function index()
     {
         $paths = Path::with('stable')->get();
-        return view('paths.index', compact('paths'));
+        return view('Layouts_dashboard.paths.index', compact('paths'));
     }
 
     // عرض صفحة إنشاء مسار
@@ -35,7 +35,7 @@ class PathController extends Controller
 
         Path::create($validated);
 
-        return redirect()->route('paths.index')->with('success', 'Path created successfully!');
+        return redirect()->route('Layouts_dashboard.paths.index')->with('success', 'Path created successfully!');
     }
 
     // عرض صفحة تعديل المسار
@@ -58,13 +58,13 @@ class PathController extends Controller
 
         $path->update($validated);
 
-        return redirect()->route('paths.index')->with('success', 'Path updated successfully!');
+        return redirect()->route('Layouts_dashboard.paths.index')->with('success', 'Path updated successfully!');
     }
 
     // حذف المسار
     public function destroy(Path $path)
     {
         $path->delete();
-        return redirect()->route('paths.index')->with('success', 'Path deleted successfully!');
+        return redirect()->route('Layouts_dashboard.paths.index')->with('success', 'Path deleted successfully!');
     }
 }

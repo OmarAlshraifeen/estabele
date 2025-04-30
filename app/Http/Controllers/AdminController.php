@@ -12,7 +12,7 @@ class AdminController extends Controller
     public function index()
     {
         $admins = Admin::all();
-        return view('admins.index', compact('admins'));
+        return view('Layouts_dashboard.admins.index', compact('admins'));
     }
 
     // عرض صفحة إنشاء إدمن جديد
@@ -34,7 +34,7 @@ class AdminController extends Controller
 
         Admin::create($validated);
 
-        return redirect()->route('admins.index')->with('success', 'Admin created successfully!');
+        return redirect()->route('Layouts_dashboard.admins.index')->with('success', 'Admin created successfully!');
     }
 
     // عرض صفحة التعديل
@@ -60,13 +60,13 @@ class AdminController extends Controller
 
         $admin->update($validated);
 
-        return redirect()->route('admins.index')->with('success', 'Admin updated successfully!');
+        return redirect()->route('Layouts_dashboard.admins.index')->with('success', 'Admin updated successfully!');
     }
 
     // حذف الإدمن
     public function destroy(Admin $admin)
     {
         $admin->delete();
-        return redirect()->route('admins.index')->with('success', 'Admin deleted successfully!');
+        return redirect()->route('Layouts_dashboard.admins.index')->with('success', 'Admin deleted successfully!');
     }
 }
