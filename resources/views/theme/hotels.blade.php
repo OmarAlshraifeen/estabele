@@ -12,7 +12,7 @@
 							<h1 class="text-white">
 								Hotels				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="hotels.html"> Hotels</a></p>
+							<p class="text-white link-nav"><a href="{{route('theme.index')}}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="hotels.html"> Hotels</a></p>
 						</div>	
 					</div>
 				</div>
@@ -34,7 +34,7 @@
 						<div class="col-lg-4">
 							<div class="single-destinations">
 								<div class="thumb">
-									<img src="img/hotels/d1.jpg" alt="">
+									<img src="{{asset('assets')}}/img/hotels/d1.jpg" alt="">
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
@@ -86,7 +86,7 @@
 						<div class="col-lg-4">
 							<div class="single-destinations">
 								<div class="thumb">
-									<img src="img/hotels/d2.jpg" alt="">
+									<img src="{{asset('assets')}}/img/hotels/d2.jpg" alt="">
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
@@ -138,7 +138,7 @@
 						<div class="col-lg-4">
 							<div class="single-destinations">
 								<div class="thumb">
-									<img src="img/hotels/d3.jpg" alt="">
+									<img src="{{asset('assets')}}/img/hotels/d3.jpg" alt="">
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
@@ -190,7 +190,7 @@
 						<div class="col-lg-4">
 							<div class="single-destinations">
 								<div class="thumb">
-									<img src="img/hotels/d4.jpg" alt="">
+									<img src="{{asset('assets')}}/img/hotels/d4.jpg" alt="">
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
@@ -242,7 +242,7 @@
 						<div class="col-lg-4">
 							<div class="single-destinations">
 								<div class="thumb">
-									<img src="img/hotels/d5.jpg" alt="">
+									<img src="{{asset('assets')}}/img/hotels/d5.jpg" alt="">
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">
@@ -294,7 +294,7 @@
 						<div class="col-lg-4">
 							<div class="single-destinations">
 								<div class="thumb">
-									<img src="img/hotels/d6.jpg" alt="">
+									<img src="{{asset('assets')}}/img/hotels/d6.jpg" alt="">
 								</div>
 								<div class="details">
 									<h4 class="d-flex justify-content-between">

@@ -25,7 +25,7 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 info-left">
-							<img class="img-fluid" src="img/about/info-img.jpg" alt="">
+							<img class="img-fluid" src="{{asset('assets')}}/img/about/info-img.jpg" alt="">
 						</div>
 						<div class="col-lg-6 info-right">
 							<h6>About Us</h6>
@@ -165,7 +165,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o1.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o1.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>Rent a Car</h4>
@@ -178,7 +178,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o2.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o2.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>Cruise Booking</h4>
@@ -191,7 +191,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o3.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o3.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>To Do List</h4>
@@ -204,7 +204,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o4.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o4.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>Food Features</h4>
@@ -235,7 +235,7 @@
 		                <div class="active-testimonial">
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user1.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -253,7 +253,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user2.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -271,7 +271,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user1.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -289,7 +289,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user2.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -307,7 +307,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user1.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -325,7 +325,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user2.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>

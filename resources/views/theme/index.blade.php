@@ -24,8 +24,8 @@
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-8">
 		                    <div class="title text-center">
-		                        <h1 class="mb-10">Popular Destinations</h1>
-		                        <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</p>
+		                        <h1 class="mb-10">Stables at the top</h1>
+		                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates laboriosam ratione sit, animi magnam, vero, sequi ea deserunt asperiores itaque a. Possimus iste dolorum praesentium! Aut illo ullam nostrum incidunt.</p>
 		                    </div>
 		                </div>
 		            </div>						
@@ -34,7 +34,7 @@
 							<div class="single-destination relative">
 								<div class="thumb relative">
 									<div class="overlay overlay-bg"></div>
-									<img class="img-fluid" src="img/d1.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/d1.jpg" alt="">
 								</div>
 								<div class="desc">	
 									<a href="#" class="price-btn">$150</a>			
@@ -47,7 +47,8 @@
 							<div class="single-destination relative">
 								<div class="thumb relative">
 									<div class="overlay overlay-bg"></div>
-									<img class="img-fluid" src="img/d2.jpg" alt="">
+                                    <img class="img-fluid" src="{{ asset('assets/img/d2.jpg') }}" alt="">
+
 								</div>
 								<div class="desc">	
 									<a href="#" class="price-btn">$250</a>			
@@ -60,7 +61,7 @@
 							<div class="single-destination relative">
 								<div class="thumb relative">
 									<div class="overlay overlay-bg"></div>
-									<img class="img-fluid" src="img/d3.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/d3.jpg" alt="">
 								</div>
 								<div class="desc">	
 									<a href="#" class="price-btn">$350</a>			
@@ -201,7 +202,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o1.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o1.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>Rent a Car</h4>
@@ -214,7 +215,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o2.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o2.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>Cruise Booking</h4>
@@ -227,7 +228,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o3.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o3.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>To Do List</h4>
@@ -240,7 +241,7 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-other-issue">
 								<div class="thumb">
-									<img class="img-fluid" src="img/o4.jpg" alt="">					
+									<img class="img-fluid" src="{{asset('assets')}}/img/o4.jpg" alt="">					
 								</div>
 								<a href="#">
 									<h4>Food Features</h4>
@@ -271,7 +272,7 @@
 		                <div class="active-testimonial">
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user1.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -289,7 +290,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user2.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -307,7 +308,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user1.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -325,7 +326,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user2.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -343,7 +344,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user1.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -361,7 +362,7 @@
 		                    </div>
 		                    <div class="single-testimonial item d-flex flex-row">
 		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
+		                            <img class="img-fluid" src="{{asset('assets')}}/img/elements/user2.png" alt="">
 		                        </div>
 		                        <div class="desc">
 		                            <p>
@@ -399,7 +400,7 @@
 							<a href="#" class="primary-btn text-uppercase">request custom price</a>
 						</div>
 						<div class="col-lg-6 col-md-12 home-about-right no-padding">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
+							<img class="img-fluid" src="{{asset('assets')}}/img/about-img.jpg" alt="">
 						</div>
 					</div>
 				</div>	
@@ -422,7 +423,7 @@
 						<div class="active-recent-blog-carusel">
 							<div class="single-recent-blog-post item">
 								<div class="thumb">
-									<img class="img-fluid" src="img/b1.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/b1.jpg" alt="">
 								</div>
 								<div class="details">
 									<div class="tags">
@@ -444,7 +445,7 @@
 							</div>
 							<div class="single-recent-blog-post item">
 								<div class="thumb">
-									<img class="img-fluid" src="img/b2.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/b2.jpg" alt="">
 								</div>
 								<div class="details">
 									<div class="tags">
@@ -466,7 +467,7 @@
 							</div>
 							<div class="single-recent-blog-post item">
 								<div class="thumb">
-									<img class="img-fluid" src="img/b3.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/b3.jpg" alt="">
 								</div>
 								<div class="details">
 									<div class="tags">
@@ -488,7 +489,7 @@
 							</div>	
 							<div class="single-recent-blog-post item">
 								<div class="thumb">
-									<img class="img-fluid" src="img/b1.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/b1.jpg" alt="">
 								</div>
 								<div class="details">
 									<div class="tags">
@@ -510,7 +511,7 @@
 							</div>
 							<div class="single-recent-blog-post item">
 								<div class="thumb">
-									<img class="img-fluid" src="img/b2.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/b2.jpg" alt="">
 								</div>
 								<div class="details">
 									<div class="tags">
@@ -532,7 +533,7 @@
 							</div>
 							<div class="single-recent-blog-post item">
 								<div class="thumb">
-									<img class="img-fluid" src="img/b3.jpg" alt="">
+									<img class="img-fluid" src="{{asset('assets')}}/img/b3.jpg" alt="">
 								</div>
 								<div class="details">
 									<div class="tags">

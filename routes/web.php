@@ -1,6 +1,10 @@
 <?php
-use App\Http\Controllers\AdminController;
+
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\AdminController;
+
 use App\Http\Controllers\Admin\Auth\LoginController;
 
 use App\Http\Controllers\StableController;
@@ -14,6 +18,22 @@ use App\Models\User;
 use App\Models\Booking;
 use App\Models\Horse;
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+
+
 // use App\Http\Controllers\AdminController;
 Route::controller(ThemeController::class)->group(function () {
     Route::get('/', 'index')->name('theme.index');
@@ -21,22 +41,22 @@ Route::controller(ThemeController::class)->group(function () {
     Route::get('/contact', 'contact')->name('theme.contact');
     Route::get('/hotels', 'hotels')->name('theme.hotels');
     Route::get('/about',   'about')->name('theme.about');
- 
+    
 });
 
 
 
 // Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/admin', [AdminController::class, 'index']);
-
-Route::resource('stables', StableController::class);
-Route::resource('admins', AdminController::class);
-Route::resource('users', UserController::class);
-Route::resource('horses', HorseController::class);
-Route::resource('horses', HorseController::class);
-Route::resource('paths', PathController::class);
+    //     return view('welcome');
+    // });
+    Route::get('/admin', [AdminController::class, 'index']);
+    
+    Route::resource('stables', StableController::class);
+    Route::resource('admins', AdminController::class);
+    Route::resource('users', UserController::class);
+    Route::resource('horses', HorseController::class);
+    Route::resource('horses', HorseController::class);
+    Route::resource('paths', PathController::class);
 Route::resource('bookings', BookingController::class);
 Route::resource('bookings', BookingController::class);
 
@@ -55,3 +75,5 @@ Route::middleware(['auth:admin'])->group(function () {
 Route::get('/admin/login', [App\Http\Controllers\Admin\Auth\LoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin/login', [App\Http\Controllers\Admin\Auth\LoginController::class, 'login']);
 Route::post('/admin/logout', [App\Http\Controllers\Admin\Auth\LoginController::class, 'logout'])->name('admin.logout');
+
+require __DIR__.'/auth.php';
