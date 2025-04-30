@@ -8,17 +8,27 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\HorseController;
 use App\Http\Controllers\PathController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ThemeController;
 
 use App\Models\User;
 use App\Models\Booking;
 use App\Models\Horse;
 
 // use App\Http\Controllers\AdminController;
-
-
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(ThemeController::class)->group(function () {
+    Route::get('/', 'index')->name('theme.index');
+    Route::post('/about', 'about')->name('theme.about');
+    Route::get('/contact', 'contact')->name('theme.contact');
+    Route::get('/hotels', 'hotels')->name('theme.hotels');
+    Route::get('/about',   'about')->name('theme.about');
+ 
 });
+
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/admin', [AdminController::class, 'index']);
 
 Route::resource('stables', StableController::class);
